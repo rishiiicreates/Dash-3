@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Platform-specific styling */
+.platform-card-youtube { 
+  border-top: 4px solid #FF0000; 
+}
+.platform-card-instagram { 
+  border-top: 4px solid #E1306C; 
+}
+.platform-card-twitter { 
+  border-top: 4px solid #1DA1F2; 
+}
+.platform-card-facebook { 
+  border-top: 4px solid #4267B2; 
+}
+
+/* Customize shadcn components */
+.platform-icon-youtube {
+  color: #FF0000;
+}
+.platform-icon-instagram {
+  color: #E1306C;
+}
+.platform-icon-twitter {
+  color: #1DA1F2;
+}
+.platform-icon-facebook {
+  color: #4267B2;
+}
+
+/* Social media button styles */
+.social-btn-google {
+  background-color: #fff;
+  color: #757575;
+  border: 1px solid #ddd;
+}
+.social-btn-google:hover {
+  background-color: #f8f8f8;
+}
+
+.social-btn-apple {
+  background-color: #000;
+  color: #fff;
+}
+.social-btn-apple:hover {
+  background-color: #333;
+}
